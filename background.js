@@ -1,5 +1,5 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  const targetURL = "https://chat.openai.com"; // Change this to your desired tab
+  const targetURL = "https://chatgpt.com"; // Change this to your desired tab
 
   if (changeInfo.status === "complete" && tab.url.startsWith(targetURL)) {
     chrome.scripting.executeScript({
@@ -11,3 +11,4 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     });
   }
 });
+
