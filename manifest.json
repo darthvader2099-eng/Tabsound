@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Sound Trigger",
+  "version": "1.0",
+  "description": "Plays a sound when a specific tab is opened.",
+  "permissions": ["tabs", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Tab Sound Trigger"
+  }
+}
