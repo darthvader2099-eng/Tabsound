@@ -5,7 +5,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     chrome.scripting.executeScript({
       target: { tabId: tabId },
       func: () => {
-        const audio = new Audio("https://example.com/greeting.mp3");
+        const audio = new Audio("https://darthvader2099-eng.github.io/Tabsound/");
         audio.play();
       }
     });
