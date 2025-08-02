@@ -5,10 +5,11 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     chrome.scripting.executeScript({
       target: { tabId: tabId },
       func: () => {
-        const audio = new Audio("https://darthvader2099-eng.github.io/Tabsound/");
+        const audio = new Audio("https://nickgreet.s3.us-east-2.amazonaws.com/greeting.mp3");
         audio.play();
       }
     });
   }
 });
+
 
